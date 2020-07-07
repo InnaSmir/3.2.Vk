@@ -13,6 +13,12 @@ public class Post {
     private ViewsInfo viewsInfo;
     private String attachmentsLink; // ссылка на источник поста
     private boolean isFavorite;
+    private int fromId;
+    private String copyright;
+    private String postType;
+    private GeoInfo geoInfo;
+    private CanDelete canDelete;
+    private CanEdit canEdit;
 
     public int getId() {
         return id;
@@ -92,5 +98,53 @@ public class Post {
 
     public void setFavorite(boolean favorite) {
         isFavorite = favorite;
+    }
+
+    public int getFromId() {
+        return fromId;
+    }
+
+    public void setFromId(int fromId) {
+        this.fromId = fromId;
+    }
+
+    public String getCopyright() {
+        return copyright;
+    }
+
+    public void setCopyright(String copyright) {
+        this.copyright = copyright;
+    }
+
+    public String getPostType() {
+        return postType;
+    }
+
+    public void setPostType(String postType) {
+        this.postType = postType;
+    }
+
+    public GeoInfo getGeoInfo() {
+        return geoInfo;
+    }
+
+    public void setGeoInfo(GeoInfo geoInfo) {
+        this.geoInfo = geoInfo;
+    }
+
+    public CanDelete getCanDelete() {
+        return canDelete;
+    }
+
+    public void setCanDelete(CanDelete canDelete) {
+        this.canDelete = canDelete;
+    }
+
+    public CanEdit getCanEdit() {
+        return canEdit;
+    }
+
+    public void setCanEdit(CanEdit canEdit) {
+        this.canEdit = canEdit;
     }
 }
